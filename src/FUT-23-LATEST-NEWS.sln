@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FUT-23-LATEST-NEWS.API", "FUT-23-LATEST-NEWS.API\FUT-23-LATEST-NEWS.API.csproj", "{1DBC40ED-3192-4E2F-8E18-590EF300662A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1DBC40ED-3192-4E2F-8E18-590EF300662A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1DBC40ED-3192-4E2F-8E18-590EF300662A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1DBC40ED-3192-4E2F-8E18-590EF300662A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1DBC40ED-3192-4E2F-8E18-590EF300662A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7BE6B6F0-693E-4DB1-8A53-9AB65AC3A752}
+	EndGlobalSection
+EndGlobal
