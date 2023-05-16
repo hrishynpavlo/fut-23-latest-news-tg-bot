@@ -1,3 +1,4 @@
+using FUT_23_LATEST_NEWS.FeedFetcher;
 using Microsoft.AspNetCore.Mvc;
 
 namespace FUT_23_LATEST_NEWS.API.Controllers
@@ -14,9 +15,11 @@ namespace FUT_23_LATEST_NEWS.API.Controllers
         }
 
         [HttpGet("futwiz")]
-        public ActionResult Get()
+        public async Task<ActionResult> Get()
         {
-            return Ok(new { status = "OK" });
+            var fetcher = new PupeteerFeedFetcher();
+            var content = await fetcher.FetchAsync();
+            return Ok(content);
         }
     }
 }
