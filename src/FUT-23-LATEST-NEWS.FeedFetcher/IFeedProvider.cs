@@ -1,6 +1,6 @@
 ﻿namespace FUT_23_LATEST_NEWS.FeedFetcher
 {
-    public interface IFeedFetcher
+    public interface IFeedProvider
     {
         Task<List<FutContent>> FetchAsync();
     }

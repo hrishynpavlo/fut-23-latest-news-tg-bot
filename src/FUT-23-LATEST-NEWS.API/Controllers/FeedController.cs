@@ -7,18 +7,19 @@ namespace FUT_23_LATEST_NEWS.API.Controllers
     [Route("api/[controller]")]
     public class FeedController : ControllerBase
     {
+        private readonly IFeedProvider _feed;
         private readonly ILogger<FeedController> _logger;
 
-        public FeedController(ILogger<FeedController> logger)
+        public FeedController(IFeedProvider feedProvider, ILogger<FeedController> logger)
         {
-            _logger = logger;
+            _feed = feedProvider ?? throw new ArgumentNullException(nameof(feedProvider));
+            _logger = logger ?? throw new ArgumentNullException(nameof(logger));
         }
 
         [HttpGet("futwiz")]
         public async Task<ActionResult> Get()
         {
-            var fetcher = new PupeteerFeedFetcher();
-            var content = await fetcher.FetchAsync();
+            var content = await _feed.FetchAsync();
             return Ok(content);
         }
     }
