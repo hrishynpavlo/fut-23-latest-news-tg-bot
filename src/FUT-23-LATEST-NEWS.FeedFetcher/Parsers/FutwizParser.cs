@@ -1,4 +1,5 @@
 ﻿using AngleSharp.Html.Parser;
+using FUT_23_LATEST_NEWS.Infrastructure.Models;
 using Microsoft.Extensions.Logging;
 
 namespace FUT_23_LATEST_NEWS.FeedFetcher.Parsers

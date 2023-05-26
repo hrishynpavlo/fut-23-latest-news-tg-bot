@@ -1,4 +1,6 @@
-﻿namespace FUT_23_LATEST_NEWS.FeedFetcher.Parsers
+﻿using FUT_23_LATEST_NEWS.Infrastructure.Models;
+
+namespace FUT_23_LATEST_NEWS.FeedFetcher.Parsers
 {
     public interface IHtmlParser
     {

@@ -1,4 +1,4 @@
-﻿namespace FUT_23_LATEST_NEWS.FeedFetcher
+﻿namespace FUT_23_LATEST_NEWS.Infrastructure.Models
 {
     public class FutContent
     {
